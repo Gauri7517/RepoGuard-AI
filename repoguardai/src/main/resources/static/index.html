@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>RepoGuard AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<header class="header">
+
+<div class="logo-section">
+
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="logo">
+
+<div>
+<h1 class="title">RepoGuard AI</h1>
+<p class="subtitle">GitHub Repository Analyzer</p>
+</div>
+
+</div>
+
+</header>
+
+
+<div class="repo-input">
+
+<label>Repository URL:</label>
+
+<input id="repoUrl" placeholder="https://github.com/user/project">
+
+<button onclick="analyzeRepo()">Analyze</button>
+
+</div>
+
+
+
+<div class="stats">
+
+<div class="stat">
+
+<div class="stat-icon">📁</div>
+
+<div>
+<span>Files Analyzed</span>
+<h2 id="files">0</h2>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">🔄</div>
+
+<div>
+<span>Commits</span>
+<h2 id="issues">0</h2>
+</div>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">👥</div>
+
+<div>
+<span>Contributors</span>
+<h2 id="watchers">0</h2>
+</div>
+
+</div>
+
+
+<div class="stat score">
+
+<div class="stat-icon">✔</div>
+
+<div>
+<span>Code Quality</span>
+<h2 id="stars">0 / 100</h2>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="dashboard">
+
+
+<div class="card">
+
+<h2>Tech Stack</h2>
+
+<ul id="tech">
+<li>Waiting for analysis...</li>
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>AI Summary</h2>
+
+<p id="summary">
+Paste a GitHub repository URL and click Analyze.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Repository Structure</h2>
+
+<ul id="structure">
+<li>Waiting for analysis...</li>
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Security Issues</h2>
+
+<p id="security">
+Waiting for scan...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>File Analysis</h2>
+
+<p id="fileanalysis">
+Waiting for repository data...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Refactoring Suggestion</h2>
+
+<p id="refactor">
+Suggestions will appear after analysis.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
